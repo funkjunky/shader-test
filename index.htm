@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>GLSL TESTING</title>
+    </head>
+    <body>
+        <h1>HELLO WORLD</h1>
+        <canvas style="border: solid 1px black" width="800" height="600"></canvas>
+        <pre></pre>
+
+        <script id="vertexShader" type="x-shader/x-vertex">
+            attribute vec3 vPosition;
+
+            void main() {
+                gl_Position = vec4(vPosition, 1.0);
+            }
+        </script>
+        <script id="fragmentShader" type="x-shader/x-fragment">
+            void mainImage( out vec4 fragColor, in vec2 fragCoord )
+            {
+                vec2 uv = fragCoord.xy / iResolution.xy;
+                fragColor = vec4(uv,0.5+0.5*sin(iTime),1.0);
+            }
+        </script>
+        <script src="webgl-utils.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

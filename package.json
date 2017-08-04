@@ -1,0 +1,15 @@
+{
+  "name": "shader-test",
+  "version": "0.0.1",
+  "description": "just testing out glsl shaders using webgl",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "shaders",
+    "glsl"
+  ],
+  "author": "Jason McCarrell <jason.abz@gmail.com>",
+  "license": "MIT"
+}
